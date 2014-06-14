@@ -27,6 +27,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.msm8974
 
+# Logo
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/logo.bin:system/logo.bin
+
 # Keylayouts
 PRODUCT_PACKAGES += \
     $(LOCAL_PATH)/keylayout/atmel_mxt_ts.kl:system/usr/keylayout/atmel_mxt_ts.kl \
