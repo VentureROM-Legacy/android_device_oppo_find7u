@@ -40,5 +40,16 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 13747929088 # 13747945472 - 16384 for cryp
 # Recovery
 TARGET_RECOVERY_FSTAB := device/oppo/find7/rootdir/etc/fstab.qcom
 
+# External apps on SD
+TARGET_EXTERNAL_APPS = sdcard1
+
+# TWRP specific build flags
+DEVICE_RESOLUTION := 1080x1920
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TW_NO_USB_STORAGE := true
+TW_INCLUDE_JB_CRYPTO := true
+TW_NO_SCREEN_BLANK := true
+
 # inherit from the proprietary version
 -include vendor/oppo/find7/BoardConfigVendor.mk
