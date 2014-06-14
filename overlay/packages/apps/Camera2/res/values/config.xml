@@ -19,7 +19,7 @@
 
 <resources>
     <!-- Use ZSL mode for Qualcomm cameras -->
-    <bool name="enableZSL">true</bool>
+    <bool name="enableZSL">false</bool>
     
     <!-- Allows setting video size before recording starts -->
     <bool name="needsEarlyVideoSize">true</bool>
