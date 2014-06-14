@@ -51,5 +51,8 @@ TW_NO_USB_STORAGE := true
 TW_INCLUDE_JB_CRYPTO := true
 TW_NO_SCREEN_BLANK := true
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := find7,find7a,X9007,X9006
+
 # inherit from the proprietary version
 -include vendor/oppo/find7/BoardConfigVendor.mk
