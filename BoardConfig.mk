@@ -55,7 +55,7 @@ TW_NO_SCREEN_BLANK := true
 TARGET_OTA_ASSERT_DEVICE := find7,find7a,X9007,X9006
 
 # Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := device/oppo/find7a
+TARGET_RELEASETOOLS_EXTENSIONS := device/oppo/find7
 
 # inherit from the proprietary version
 -include vendor/oppo/find7/BoardConfigVendor.mk
