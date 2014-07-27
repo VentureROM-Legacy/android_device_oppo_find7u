@@ -19,10 +19,10 @@
 
 # Kernel
 TARGET_KERNEL_CONFIG := paranoid_find7_defconfig
-BOARD_CUSTOM_BOOTIMG_MK := device/oppo/find7/mkbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/oppo/find7u/mkbootimg.mk
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oppo/find7/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oppo/find7u/bluetooth
 
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
@@ -41,12 +41,13 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 13747929088 # 13747945472 - 16384 for cryp
 TARGET_INIT_VENDOR_LIB := libinit_find7
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/oppo/find7/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := device/oppo/find7u/rootdir/etc/fstab.qcom
 
 # External apps on SD
 TARGET_EXTERNAL_APPS = sdcard1
 
 # TWRP specific build flags
+RECOVERY_SDCARD_ON_DATA := true
 DEVICE_RESOLUTION := 1080x1920
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
@@ -55,10 +56,10 @@ TW_INCLUDE_JB_CRYPTO := true
 TW_NO_SCREEN_BLANK := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := FIND7,find7,find7a,X9007,X9006,X9076
+TARGET_OTA_ASSERT_DEVICE := FIND7,find7,find7a,find7u,X9007,X9006,X9076
 
 # Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := device/oppo/find7
+TARGET_RELEASETOOLS_EXTENSIONS := device/oppo/find7u
 
 # inherit from the proprietary version
 -include vendor/oppo/find7/BoardConfigVendor.mk
