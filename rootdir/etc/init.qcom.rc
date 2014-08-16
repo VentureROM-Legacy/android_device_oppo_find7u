@@ -35,7 +35,7 @@ on init
     mkdir /mnt/media_rw/usbdisk 0700 media_rw media_rw
 
     symlink /mnt/shell/emulated/0 /storage/emulated/legacy
-    symlink /mnt/shell/emulated/0 /storage/sdcard0
+    symlink /storage/emulated/legacy /storage/sdcard0
 
     mkdir /storage/sdcard1 0700 root root
     mkdir /storage/usbdisk 0700 root root
