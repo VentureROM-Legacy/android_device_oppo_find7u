@@ -30,9 +30,9 @@
         "revision":    "kitkat"
     },
     {
-        "remote":      "legacy-blobs",
+        "remote":      "blobs",
         "repository":  "proprietary_vendor_oppo",
         "target_path": "vendor/oppo",
-        "revision":    "kitkat"
+        "revision":    "cm-11.0"
     }    
 ]
